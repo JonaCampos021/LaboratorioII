@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mí</title>
+    <link rel="stylesheet" href="estilosLabII.css">
+   
+</head>
+<body>
+    <script src="LabII.js"></script>
+    <h1 class="titulo">Acerca de Mí</h1>
+    <div class="container">
+        <div class="texto" onclick="cambiarColor(this)" id="animal"> Mi animal favorito: Gatos</div>
+        <div class="texto" onmouseover="mostrarMensaje(this, 'Comida Favorita ')" onmouseout="ocultarMensaje(this)">Comida favorita</div>
+        <div class="texto" ondblclick="cambiarTexto(this)"> Película/Serie favorita</div>
+        <div class="texto" onmouseenter="agrandarTexto(this)" onmouseleave="restaurarTexto(this)"> Canciones favoritas: Were not gonna take it</div>
+        <div class="texto"id="persona" oncontextmenu="mostrarAlerta(event)"> Persona a quién admiro</div>
+        <div class="texto" id="pais" onfocus="cambiarBorde(this)" tabindex="0"> País que quiero visitar: Portugal</div>
+    </div>
+    
+</body>
+</html>
